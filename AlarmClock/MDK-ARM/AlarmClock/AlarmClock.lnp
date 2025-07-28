@@ -1,0 +1,25 @@
+--cpu Cortex-M3
+"alarmclock\startup_stm32f103xb.o"
+"alarmclock\main.o"
+"alarmclock\stm32f1xx_it.o"
+"alarmclock\stm32f1xx_hal_msp.o"
+"alarmclock\stm32f1xx_hal_gpio_ex.o"
+"alarmclock\stm32f1xx_hal_rtc.o"
+"alarmclock\stm32f1xx_hal_rtc_ex.o"
+"alarmclock\stm32f1xx_hal.o"
+"alarmclock\stm32f1xx_hal_rcc.o"
+"alarmclock\stm32f1xx_hal_rcc_ex.o"
+"alarmclock\stm32f1xx_hal_gpio.o"
+"alarmclock\stm32f1xx_hal_dma.o"
+"alarmclock\stm32f1xx_hal_cortex.o"
+"alarmclock\stm32f1xx_hal_pwr.o"
+"alarmclock\stm32f1xx_hal_flash.o"
+"alarmclock\stm32f1xx_hal_flash_ex.o"
+"alarmclock\stm32f1xx_hal_exti.o"
+"alarmclock\stm32f1xx_hal_tim.o"
+"alarmclock\stm32f1xx_hal_tim_ex.o"
+"alarmclock\system_stm32f1xx.o"
+--strict --scatter "AlarmClock\AlarmClock.sct"
+--summary_stderr --info summarysizes --map --load_addr_map_info --xref --callgraph --symbols
+--info sizes --info totals --info unused --info veneers
+--list "AlarmClock.map" -o AlarmClock\AlarmClock.axf
